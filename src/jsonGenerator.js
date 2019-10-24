@@ -26,13 +26,13 @@ class JsonGenerator {
         }
         if (cur != '' && cur) {
           // カラム1 ~ 7までは標準項目
-          if (i == 0) json_tmp.phone = cur;
-          if (i == 1) json_tmp.name = cur;
-          if (i == 2) json_tmp.name_kana = cur;
-          if (i == 3) json_tmp.address = cur;
-          if (i == 4) json_tmp.sex = cur;
-          if (i == 5) json_tmp.birthday = cur;
-          if (i == 6) json_tmp.status = cur;
+          if (i == 0) json_tmp['電話番号'] = cur;
+          if (i == 1) json_tmp['名前'] = cur;
+          if (i == 2) json_tmp['ナマエカナ'] = cur;
+          if (i == 3) json_tmp['住所'] = cur;
+          if (i == 4) json_tmp['性別']= cur;
+          if (i == 5) json_tmp['誕生日'] = cur;
+          if (i == 6) json_tmp['顧客状況'] = cur;
           // カラム7以降は自由項目
           if (i > 6) {
             // 奇数列はkey
