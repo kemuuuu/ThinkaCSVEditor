@@ -9,8 +9,8 @@ class JsonGenerator {
   generate() {
     // 1行を1要素としたリストを作成
     this._data.split('\n').reduce((acc,line,i) => {
-      // 2行目まではヘッダなのでスキップ
-      if (i < 2) return;
+      // 1行目はヘッダなのでスキップ
+      if (i < 1) return;
 
       // 1行ごとのデータを格納するJSON
       let json_tmp = {}
